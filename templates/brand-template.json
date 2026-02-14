@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "slug": "",
+  "url": "",
+  "shopify_domain": "",
+  "description": "",
+  "categories": [],
+  "ownership_type": "",
+  "certifications": [],
+  "country_hq": "",
+  "country_manufactured": "",
+  "worker_conditions": "",
+  "ceo_worker_ratio": "",
+  "price_range": "",
+  "sources": [],
+  "verified_by": [],
+  "last_verified": "",
+  "trust_tiers": {
+    "ownership_type": 1,
+    "certifications": 1,
+    "worker_conditions": 1,
+    "country_manufactured": 1,
+    "ceo_worker_ratio": 1
+  }
+}

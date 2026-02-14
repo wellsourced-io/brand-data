@@ -1,0 +1,29 @@
+{
+  "name": "Patagonia",
+  "slug": "patagonia",
+  "url": "https://www.patagonia.com",
+  "shopify_domain": "patagonia.myshopify.com",
+  "description": "Outdoor clothing and gear company committed to environmental responsibility.",
+  "categories": ["apparel", "outdoor"],
+  "ownership_type": "b-corp",
+  "certifications": ["B Corp", "Fair Trade", "1% for the Planet"],
+  "country_hq": "US",
+  "country_manufactured": "Multiple (Vietnam, Sri Lanka, US)",
+  "worker_conditions": "Fair Trade certified factories. Published supply chain transparency reports.",
+  "price_range": "$$$",
+  "sources": [
+    {
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc",
+      "description": "B Corp directory listing",
+      "accessed": "2026-02-13"
+    }
+  ],
+  "verified_by": [],
+  "last_verified": "2026-02-13",
+  "trust_tiers": {
+    "ownership_type": 3,
+    "certifications": 3,
+    "worker_conditions": 2,
+    "country_manufactured": 2
+  }
+}

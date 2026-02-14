@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["name", "slug", "url", "shopify_domain", "description", "country_hq"],
+  "properties": {
+    "name": { "type": "string" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "url": { "type": "string", "format": "uri" },
+    "shopify_domain": { "type": "string" },
+    "description": { "type": "string" },
+    "categories": { "type": "array", "items": { "type": "string" } },
+    "ownership_type": {
+      "type": "string",
+      "enum": ["indie", "worker-owned", "co-op", "employee-owned", "b-corp", "public"]
+    },
+    "certifications": { "type": "array", "items": { "type": "string" } },
+    "country_hq": { "type": "string" },
+    "country_manufactured": { "type": "string" },
+    "worker_conditions": { "type": "string" },
+    "ceo_worker_ratio": { "type": "string" },
+    "price_range": { "type": "string", "enum": ["$", "$$", "$$$", "$$$$"] },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "description", "accessed"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "description": { "type": "string" },
+          "accessed": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "verified_by": { "type": "array", "items": { "type": "string" } },
+    "last_verified": { "type": "string", "format": "date" },
+    "trust_tiers": {
+      "type": "object",
+      "properties": {
+        "ownership_type": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "certifications": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "worker_conditions": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "country_manufactured": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "ceo_worker_ratio": { "type": "integer", "minimum": 1, "maximum": 3 }
+      }
+    }
+  }
+}
